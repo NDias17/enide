@@ -34,5 +34,38 @@ h1{
 }
 
 .follow{
-  
+  display: flex;
+  width: 166px;
+  height: 51px;
+  background-color: #FFB829;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-family: "Actor", sans-serif;
+  border-radius: 50px;
+  margin-top: 50px;
+  margin-bottom: 128px;
+}
+
+.follow a {
+  color: #121212;
+}
+
+#rodape{
+  display: flex;
+  width: 917px;
+  height: 58px;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+.social{
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  width: 186px;
+  height: 58px;
 }

@@ -16,3 +16,23 @@ img{
   margin: auto;
   margin-top: 156px;
 }
+
+h1{
+  color: white;
+  font-family: "Paytone One", sans-serif;
+  text-align: center;
+  margin-top: 24px;
+  line-height: 110%;
+}
+
+.bio{
+  color: #f7f7f5;
+  font-family: "Actor", sans-serif;
+  text-align: center;
+  opacity: 50%;
+  margin-top: 24px;
+}
+
+.follow{
+  
+}

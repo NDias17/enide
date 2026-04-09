@@ -10,6 +10,7 @@ body{
 
 #corpo{
   width: 100%;
+  padding: 0 16px;
 }
 
 img{
@@ -27,6 +28,7 @@ h1{
   text-align: center;
   margin-top: 24px;
   line-height: 110%;
+  font-size: clamp(1.4rem, 5vw, 2rem);
 }
 
 .bioo{
@@ -48,60 +50,65 @@ h1{
   font-family: "Actor", sans-serif;
   border-radius: 50px;
   margin-top: 50px;
-  margin-bottom: 128px;
+  margin-bottom: 64px;
+  text-decoration: none;
 }
 
 .ig {
   color: #121212;
+  text-decoration: none;
 }
 
 #rodape{
   display: flex;
-  width: 917px;
-  height: 58px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 917px;
   justify-content: center;
   align-items: center;
   margin: auto;
   margin-bottom: 70px;
-  gap: 30px;
+  gap: 16px;
+  padding: 0 8px;
 }
 
-.social0{
-  display: flex;
-  width: 186px;
-  height: 58px;
-  align-items: center;
-  color: white;
-  font-family: "Actor", sans-serif;
-}
-
-.social1{
-  display: flex;
-  width: 308px;
-  height: 58px;
-  align-items: center;
-  color: white;
-  font-family: "Actor", sans-serif;
-}
-
+.social0,
+.social1,
 .social2{
   display: flex;
-  width: 186px;
-  height: 58px;
   align-items: center;
   color: white;
   font-family: "Actor", sans-serif;
+  gap: 10px;
+  min-width: 160px;
+  flex: 1 1 160px;
+  max-width: 320px;
 }
 
-
 ion-icon {
-  width: 54px;
-  height: 54px;
+  width: 40px;
+  height: 40px;
   font-size: 24px;
   color: #ffffff;
+  flex-shrink: 0;
 }
 
 a {
   color: #FFB829;
   font-family: "Actor", sans-serif;
+  word-break: break-all;
+}
+
+/* Telemóvel pequeno */
+@media (max-width: 480px) {
+  img {
+    margin-top: 80px;
+  }
+
+  #rodape {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 24px;
+    gap: 20px;
+  }
 }
